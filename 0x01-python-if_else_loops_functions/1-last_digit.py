@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 
 ld = abs(number) % 10
 string1 = "Last digit of "
-string2 = "less than 6 and not 0"
+string2 = "is less than 6 and not 0"
 
 if ld == 0:
     print("Last digit of {:d} is {:d} and is 0".format(number, ld))
