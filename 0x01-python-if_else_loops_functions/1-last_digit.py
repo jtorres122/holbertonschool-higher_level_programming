@@ -7,7 +7,7 @@ string1 = "Last digit of "
 string2 = "is less than 6 and not 0"
 
 if ld == 0:
-    print("Last digit of {:d} is {:d} and is 0".format(number, ld))
+    print("{:s}{:d} is {:d} and is 0".format(string1, number, ld))
 elif ld < 6 and ld != 0:
     print("{:s}{:d} is {:d} and {:s}".format(string1, number, ld, string2))
 else:
