@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-import math
 '''Module contains class that follows exact bytecode'''
+
+
+import math
 
 
 class MagicClass:
