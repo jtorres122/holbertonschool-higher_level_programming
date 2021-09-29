@@ -47,13 +47,13 @@ class Square:
         '''comment'''
         if self.__size == 0:
             print()
+        else:
+            for count in range(self.__position[1]):
+                print()
 
-        for count in range(self.__position[1]):
-            print()
-
-        for row in range(self.__size):
-            for spaces in range(self.__position[0]):
-                print(" ", end="")
-            for col in range(self.__size):
-                print("#", end="")
-            print()
+            for row in range(self.__size):
+                for spaces in range(self.__position[0]):
+                    print(" ", end="")
+                for col in range(self.__size):
+                    print("#", end="")
+                print()
