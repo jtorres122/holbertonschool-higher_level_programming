@@ -1,19 +1,22 @@
 #!/usr/bin/python3
-'''Module writes class Square with size attribute'''
+'''Module writes class Square with attributes'''
 
 
 class Square:
     '''Class verifies type and value of size'''
     def __init__(self, size=0, position=(0, 0)):
+        '''comment'''
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        '''comment'''
         return self.__size
 
     @size.setter
     def size(self, value):
+        '''comment'''
         self.__size = value
         if isinstance(value, int) is not True:
             raise TypeError("size must be an integer")
@@ -22,20 +25,28 @@ class Square:
 
     @property
     def position(self):
+        '''comment'''
+        self.__size = value
         return self.__position
 
     @position.setter
     def position(self, value):
+        '''comment'''
+        self.__size = value
         self.__position = value
-        if isinstance(value, tuple) is not True or value[0] < 0 or
-        \value[1] < 0:
+        if isinstance(value, tuple) is not True or value[0] < 0 or\
+           value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
+        '''comment'''
+        self.__size = value
         area = self.__size * self.__size
         return(area)
 
     def my_print(self):
+        '''comment'''
+        self.__size = value
         if self.__size == 0:
             print()
 
