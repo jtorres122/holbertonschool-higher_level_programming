@@ -26,13 +26,11 @@ class Square:
     @property
     def position(self):
         '''comment'''
-        self.__size = value
         return self.__position
 
     @position.setter
     def position(self, value):
         '''comment'''
-        self.__size = value
         self.__position = value
         if isinstance(value, tuple) is not True or value[0] < 0 or\
            value[1] < 0:
@@ -40,13 +38,11 @@ class Square:
 
     def area(self):
         '''comment'''
-        self.__size = value
         area = self.__size * self.__size
         return(area)
 
     def my_print(self):
         '''comment'''
-        self.__size = value
         if self.__size == 0:
             print()
 
