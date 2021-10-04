@@ -62,7 +62,7 @@ class Rectangle:
             rectangle = ""
             for row in range(self.__height):
                 for col in range(self.__width):
-                     rectangle += "#"
+                    rectangle += "#"
                 rectangle += "\n"
             return rectangle[:-1]
 
