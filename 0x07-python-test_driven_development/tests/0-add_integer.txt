@@ -1,9 +1,15 @@
-This is start of unit testing
-Importing add_integer function
+============================
+DOCTEST for 0-add_integer.py
+============================
+""" How to test add_integer() function """
+# python3 -m doctest -v ./test/0-add_integer.txt
 
->>> add = __import__('0-add_integer').add_integer
+___________________________________________
 
-Regular Use
+""" Importing the add_integer() function """
+___________________________________________
+
+Normal Usage
 ===========
 
 >>> add(1, 2)
