@@ -1,0 +1,45 @@
+This is start of unit testing
+Importing add_integer function
+
+>>> add = __import__('0-add_integer').add_integer
+
+Regular Use
+===========
+
+>>> add(1, 2)
+3
+
+>>> add(5.56, 1)
+6
+
+>>> add(4, 3.38)
+7
+
+>>> add(2.98, 8.12)
+10
+
+Edge Cases
+==========
+
+>>> add("hello", 2)
+Traceback (most recent call last):
+....
+TypeError: a must be an integer
+
+>>> add(3, "bad")
+Traceback (most recent call last):
+....
+TypeError: b must be an integer
+
+>>> add(3)
+101
+
+>>> add(5, None)
+Traceback (most recent call last):
+....
+TypeError: b must be an integer
+
+>>> add(None)
+Traceback (most recent call last):
+....
+TypeError: a must be an integer
