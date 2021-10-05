@@ -69,7 +69,9 @@ class Rectangle:
         else:
             return rect_1
 
+    @classmethod
     def square(cls, size=0):
+        '''comment'''
         return cls(size, size)
 
     def __str__(self):
