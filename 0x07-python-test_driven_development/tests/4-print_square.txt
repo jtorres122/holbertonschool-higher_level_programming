@@ -1,0 +1,55 @@
+============================
+DOCTEST for 4-print_square.py
+============================
+""" How to test print_square() function """
+# python3 -m doctest -v ./test/4-print_square.txt
+
+___________________________________________
+
+""" Importing the print_square() function """
+___________________________________________
+
+>>> print_square = __import__('4-print_square').print_square
+
+Normal Usage
+============
+
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square(1)
+#
+
+>>> print_square(0)
+
+
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+Edge cases
+=========
+
+>>> print_square("hello")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> print_square(3, 5)
+Traceback (most recent call last):
+...
+TypeError: print_square() takes 1 positional argument but 2 were given
+
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer

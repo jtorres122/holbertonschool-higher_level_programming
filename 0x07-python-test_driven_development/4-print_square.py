@@ -1,7 +1,14 @@
 #!/usr/bin/python3
+'''
 
+Module contains a function that prints a square
+
+'''
 
 def print_square(size):
+    '''
+    Function prints out a square of parameter size
+    '''
 
     if type(size) is not int:
         raise TypeError("size must be an integer")
