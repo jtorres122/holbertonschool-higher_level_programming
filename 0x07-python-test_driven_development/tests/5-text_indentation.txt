@@ -1,0 +1,62 @@
+============================
+DOCTEST for 5-text_indentation.py
+============================
+""" How to test text_indentation() function """
+# python3 -m doctest -v ./tests/5-text_indentation.txt
+
+___________________________________________
+
+""" Importing the text_indentation() function """
+___________________________________________
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Normal Usage
+============
+
+>>> text = "Holberton School"
+>>> text1 = "Holberton. School"
+>>> text2 = "Holberton? Scho. ol"
+>>> text3 = "Holberton. School? How are you:    John"
+
+>>> text_indentation(text)
+Holberton School
+
+>>> text_indentation(text1)
+Holberton.
+<BLANKLINE>
+School
+
+>>> text_indentation(text2)
+Holberton?
+<BLANKLINE>
+Scho.
+<BLANKLINE>
+ol
+
+>>> text_indentation(text3)
+Holberton.
+<BLANKLINE>
+School?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+John
+
+Edge Cases
+==========
+
+>>> text_indentation(1)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string

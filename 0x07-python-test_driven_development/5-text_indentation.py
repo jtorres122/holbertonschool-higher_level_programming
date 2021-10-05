@@ -1,7 +1,14 @@
 #!/usr/bin/python3
+'''
 
+Module contains function that indents a text
+
+'''
 
 def text_indentation(text):
+    '''
+    Function indents a text every iteration of specific characters
+    '''
 
     match = ".?:"
 
