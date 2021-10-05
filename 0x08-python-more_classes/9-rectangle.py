@@ -10,8 +10,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         '''comment'''
-        self.height = height
-        self.width = width
+        self.__width = width
+        self.__height = height
         Rectangle.number_of_instances += 1
         self.print_symbol = self.print_symbol
 
