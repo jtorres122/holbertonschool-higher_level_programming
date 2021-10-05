@@ -9,43 +9,45 @@ ___________________________________________
 """ Importing the add_integer() function """
 ___________________________________________
 
+>>> add_integer = __import__('0-add_integer').add_integer
+
 Normal Usage
 ===========
 
->>> add(1, 2)
+>>> add_integer(1, 2)
 3
 
->>> add(5.56, 1)
+>>> add_integer(5.56, 1)
 6
 
->>> add(4, 3.38)
+>>> add_integer(4, 3.38)
 7
 
->>> add(2.98, 8.12)
+>>> add_integer(2.98, 8.12)
 10
 
 Edge Cases
 ==========
 
->>> add("hello", 2)
+>>> add_integer("hello", 2)
 Traceback (most recent call last):
 ....
 TypeError: a must be an integer
 
->>> add(3, "bad")
+>>> add_integer(3, "bad")
 Traceback (most recent call last):
 ....
 TypeError: b must be an integer
 
->>> add(3)
+>>> add_integer(3)
 101
 
->>> add(5, None)
+>>> add_integer(5, None)
 Traceback (most recent call last):
 ....
 TypeError: b must be an integer
 
->>> add(None)
+>>> add_integer(None)
 Traceback (most recent call last):
 ....
 TypeError: a must be an integer
