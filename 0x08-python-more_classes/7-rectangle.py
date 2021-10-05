@@ -6,12 +6,14 @@ class Rectangle:
     '''class Rectangle with attributes width and height defined and set'''
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         '''comment'''
         self.__height = height
         self.__width = width
         Rectangle.number_of_instances += 1
+        self.print_symbol = self.print_symbol
 
     @property
     def width(self):
@@ -62,7 +64,7 @@ class Rectangle:
             rectangle = ""
             for row in range(self.__height):
                 for col in range(self.__width):
-                    rectangle += "#"
+                    rectangle += str(self.print_symbol)
                 rectangle += "\n"
             return rectangle[:-1]
 
