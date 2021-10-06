@@ -5,6 +5,7 @@ Module contains function that indents a text
 
 '''
 
+
 def text_indentation(text):
     '''
     Function indents a text every iteration of specific characters
@@ -21,6 +22,6 @@ def text_indentation(text):
         print(text[idx], end="")
         if text[idx] in match:
             print("\n")
-            while(text[idx + 1] == ' ' ):
+            while(text[idx + 1] == ' '):
                 idx += 1
         idx += 1

@@ -5,10 +5,9 @@ Module contains a matrix divinding function
 
 '''
 
+
 def matrix_divided(matrix, div):
-    '''
-        Function divides all elements of a matrix
-    '''
+    ''' Function divides all elements of a matrix '''
 
     list_error = "matrix must be a matrix (list of lists) of integers/floats"
     len_error = "Each row of the matrix must have the same size"

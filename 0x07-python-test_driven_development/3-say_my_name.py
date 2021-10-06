@@ -5,10 +5,9 @@ Module contains a function that prints out a first and last name
 
 '''
 
+
 def say_my_name(first_name, last_name=""):
-    '''
-    Function say_my_name prints two strings that are first and last names
-    '''
+    ''' Function prints two strings that are first and last names '''
 
     if type(first_name) is not str:
         raise TypeError("first_name must be a string")

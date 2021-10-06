@@ -8,7 +8,7 @@ Module contains a function that adds 2 integers
 
 def add_integer(a, b=98):
     '''
-    Function verifies if input a and b are ints and if so, returns the sum of both
+    Function verifies if inputs are ints and if so, returns the sum of both
     '''
 
     if type(a) is float:

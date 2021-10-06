@@ -5,6 +5,7 @@ Module contains a function that prints a square
 
 '''
 
+
 def print_square(size):
     '''
     Function prints out a square of parameter size
