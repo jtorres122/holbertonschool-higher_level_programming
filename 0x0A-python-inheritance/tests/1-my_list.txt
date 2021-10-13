@@ -2,7 +2,7 @@
 DOCTEST for 1-my_list.py
 ============================
 """ How to test print_sorted() function """
-# python3 -m doctest -v ./test/1-my_list.txt
+# python3 -m doctest -v ./tests/1-my_list.txt
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()

@@ -1,0 +1,18 @@
+============================
+DOCTEST for 7-base_geometry.py
+============================
+""" How to test print_sorted() function """
+# python3 -m doctest -v ./tests/7-base_geometry.txt
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> 
+
+Normal Usage
+============
+
+
+
+Edge Cases
+==========
+
+
