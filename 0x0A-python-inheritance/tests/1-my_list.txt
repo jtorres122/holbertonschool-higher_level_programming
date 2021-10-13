@@ -1,0 +1,19 @@
+============================
+DOCTEST for 1-my_list.py
+============================
+""" How to test print_sorted() function """
+# python3 -m doctest -v ./test/1-my_list.txt
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+
+Normal Usage
+============
+
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+Edge Cases
+==========
+
+
