@@ -84,5 +84,5 @@ class Rectangle(Base):
 
     def __str__(self):
         '''Overriding str method to have specific return'''
-        rectangle = "[Rectangle] ({}) {}/{} - {}/{}"
-        return rectangle.format(self.id, self.x, self.y, self.width, self.height)
+        info = "[Rectangle] ({}) {}/{} - {}/{}"
+        return info.format(self.id, self.x, self.y, self.width, self.height)
