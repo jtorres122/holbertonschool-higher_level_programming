@@ -1,10 +1,16 @@
 #!/usr/bin/python3
 from models.base import Base
+'''Module contains class Rectangle that inherits from class Base'''
 
 
 class Rectangle(Base):
+    '''
+    Class rectangle gets and sets the variables
+    that represent the size of a rectangle
+    '''
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        '''class constructor'''
         self.__width = width
         self.__height = height
         self.__x = x
