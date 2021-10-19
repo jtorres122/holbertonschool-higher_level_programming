@@ -4,10 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    '''
-    Class rectangle gets and sets the variables
-    that represent the size of a rectangle
-    '''
+    '''Child class of Base that defines a Rectangle'''
 
     def __init__(self, width, height, x=0, y=0, id=None):
         '''class constructor'''
