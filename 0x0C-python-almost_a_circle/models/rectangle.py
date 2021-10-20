@@ -108,3 +108,12 @@ class Rectangle(Base):
                 self.__x = args[3]
             if length >= 5:
                 self.__y = args[4]
+
+    def to_dictionary(self):
+        '''Method returns dict represantation of Rectangle'''
+        representation = {'x': self.__x,
+                          'y': self.__y,
+                          'id': self.id,
+                          'height': self.__height,
+                          'width': self.__width}
+        return representation
