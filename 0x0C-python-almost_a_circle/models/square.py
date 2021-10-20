@@ -42,9 +42,9 @@ class Square(Rectangle):
             if length >= 2:
                 self.size = args[1]
             if length >= 4:
-                self.__x = args[3]
+                self.x = args[3]
             if length >= 5:
-                self.__y = args[4]
+                self.y = args[4]
 
     def to_dictionary(self):
         '''Method returns dict representation of Square'''
