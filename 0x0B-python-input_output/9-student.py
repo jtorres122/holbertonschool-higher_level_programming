@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Module contains class Student'''
 
+
 class Student:
     '''class contains instantiation and __dict__'''
 
