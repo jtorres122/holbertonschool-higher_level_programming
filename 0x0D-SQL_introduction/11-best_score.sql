@@ -1,3 +1,2 @@
 -- Script lists all records with a score >= 10 of a table
-SELECT score,name FROM second_table ORDER BY score DESC
-WHERE score >= 10;
+SELECT score,name FROM second_table WHERE score >= 10 ORDER BY score DESC;
