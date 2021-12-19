@@ -17,6 +17,7 @@ if __name__ == '__main__':
                  .format(argv[4]))
     table = curs.fetchall()
     for row in table:
-        print(row)
+        if row[1] == argv[4]:
+            print(row)
     curs.close()
     connector.close()
