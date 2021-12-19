@@ -21,8 +21,8 @@ if __name__ == '__main__':
     session = sessionmaker(bind=engine)
     Session = session()
 
-    table = Session.query(State).filter(State.name
-    .contains('a')).order_by(State.id)
+    table = Session.query(State).filter(State.name.contains('a')).
+    order_by(State.id)
 
     for row in table:
         print('{}: {}'.format(row.id, row.name))
