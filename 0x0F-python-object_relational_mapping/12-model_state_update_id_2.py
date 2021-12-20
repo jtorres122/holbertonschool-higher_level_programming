@@ -21,6 +21,6 @@ if __name__ == '__main__':
 
     update = Session.query(State).get(2)
     update.name = "New Mexico"
-    session.commit()
+    Session.commit()
 
     Session.close()
