@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Script creates the State “California” with 
-the City “San Francisco” from the database 
+Script creates the State “California” with
+the City “San Francisco” from the database
 """
 
 
@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     Base.metadata.create_all(engine)
     session = sessionmaker(bind=engine)
-    Session = Session()
+    Session = session()
 
     Session.add(City(name="San Francisco", state=State(name="California")))
 
