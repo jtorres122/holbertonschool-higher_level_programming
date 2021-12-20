@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-'''
-Module contains class definition of a State who inherits Base
-'''
+""" Module defines class state with relationship """
 
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
@@ -11,12 +9,8 @@ Base = declarative_base()
 
 
 class State(Base):
-    '''
-    Class adds table states and two fields
-    with defined attributes
-    '''
-
+    """ Create class State """
     __tablename__ = 'states'
-    id = Column(Integer, nullable=False, primary_key=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
     cities = relationship("City", backref="state")

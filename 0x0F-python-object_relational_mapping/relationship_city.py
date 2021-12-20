@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-""" Module defines class City who inherits from Base """
+""" Module defines class City that has a relationship with State """
 
-from model_state import Base, State
+import sqlalchemy
 from sqlalchemy import Column, Integer, String, ForeignKey
+from relationship_state import Base, State
 
 
 class City(Base):
-    '''
-    Class adds table cities and three fields
-    with defined attributes
-    '''
-
+    """ Create class City """
     __tablename__ = 'cities'
-    id = Column(Integer, primary_key=True, nullable=False)
+    id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey(State.id), nullable=False)
+    state_id = Column(Integer, ForeignKey("states.id"))
+
