@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 '''Script creates a State with a city in a database'''
 
-
-from relationship_state import Base, State
-from relationship_city import City
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from relationship_state import Base, State
+from relationship_city import City
 from sys import argv
 
 if __name__ == '__main__':
