@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-'''Script adds the State object “Louisiana” to the database'''
+'''
+Script prints the first State object from the database hbtn_0e_6_usa
+'''
 
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sys import argv
+from sys import _xoptions, argv
 from model_state import State, Base
 
 if __name__ == '__main__':
@@ -19,10 +21,11 @@ if __name__ == '__main__':
     session = sessionmaker(bind=engine)
     Session = session()
 
-    insertState = State(name="Louisiana")
-    Session.add(insertState)
+    tobedeleted = Session.query(State).filter(
+        State.name.contains('a')).all()
+
+    for row in tobedeleted:
+        Session.delete(row)
+
     Session.commit()
-
-    print("{}".format(insertState.id))
-
     Session.close()
